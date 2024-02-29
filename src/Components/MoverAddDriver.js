@@ -69,7 +69,7 @@ function MoverAddDriver() {
                     </div>
                 </div>
                 <div className="col-lg-7" style={{paddingTop:'2rem'}}>
-                <form onSubmit={handleSubmit} >
+                <form onSubmit={(e)=>{handleSubmit(e)}} >
                         <div className="row g-3">
                             <div className="col-6">
                                 <input type="text" className="form-control bg-light border-0 px-4" placeholder="Your Name" style={{height:'55px'}} value={values.name} onChange={handleChange} onBlur={handleBlur} id='name' />
